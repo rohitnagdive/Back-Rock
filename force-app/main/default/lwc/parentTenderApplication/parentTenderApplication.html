@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Tender Application Information">
+
+        <lightning-input type="text" data-formfield="tendderId" label="Enter Tender Application Id" placeholder="Example TAID-0000"></lightning-input><br/>
+        <lightning-button variant="brand" icon-name="search" label="Show Record" onclick={searchRecordHandler}></lightning-button><br/><br/>
+        
+        Total Bids Counts= {showTotalCount}
+
+        <c-child-bid-application received-bid-application = {tenderAppList}>
+
+        </c-child-Bid-Application>
+    </lightning-card>
+</template>

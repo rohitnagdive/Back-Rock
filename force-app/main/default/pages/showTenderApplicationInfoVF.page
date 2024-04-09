@@ -1,0 +1,25 @@
+<apex:page standardController="Tender_Application__c" extensions="showTenderApplicationInfoVF_CX" renderAs="PDF">
+    <apex:form >
+     <apex:pageBlock title="Tender Application">
+         <apex:pageblockSection title="Tender Application Information">
+         Account Name= {!objTend .Account__c} <br/><br/>
+         Title = {!objTend .Title__c} <br/><br/>
+         Start Date= {!objTend .Start_Date__c} <br/>
+         Close Date=  {!objTend .Close_Date__c} <br/>
+         Approved Bid Application = {!objTend .Approved_Bid_Applicantion__c} <br/><br/>
+         Category = {!objTend .Category__c} <br/><br/>
+         Computer Device Name = {!objTend .Computer_Device_Name__c} <br/><br/>
+         Electrical Device Name = {!objTend .Electrical_Device_Name__c} <br/><br/>
+         Electronics Device Name = {!objTend .Electronics_Device_Name__c} <br/><br/>
+         Mechanical Device Name = {!objTend .Mechanical_Device_Name__c} <br/><br/>
+         Budget = {!objTend .Budget__c} <br/><br/>
+         Minimum Bid = {!objTend .Minimum_Bid__c} <br/><br/>
+         Maximum Bid = {!objTend .Maximum_Bid__c} <br/><br/>
+         Sum of Bidder Budget = {!objTend .Sum_of_Bidder_Budget__c} <br/><br/>
+         Total Bid Application = {!objTend .Total_Bid_Application__c }
+     
+     
+     </apex:pageblockSection>     
+ </apex:pageBlock>
+</apex:form>
+</apex:page>
